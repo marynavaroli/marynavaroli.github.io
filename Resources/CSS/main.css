@@ -88,6 +88,14 @@ html {
   .sidebar h2 {
     position: relative;
     margin: 1em 1em 0 1em;
+    font-size: 24px;
+    text-align: left;
+  }
+
+  .sidebar h3 {
+    position: relative;
+    margin: 1em 1em 0 1em;
+    font-size: 24px;
   }
 
   .sidebar p {
@@ -95,8 +103,9 @@ html {
     padding: 0 1em;
     font-size: 20px;
     line-height: 1.5em;
-    text-align: justify;
+    text-align: left;
     font-weight: 400;
+    overflow-wrap: break-word;
   }
 
   .scroll {
@@ -113,19 +122,20 @@ html {
 
   .scroll h1 {
     font-size: 48px;
-    margin: 0 auto;
+    margin: 0.5em auto 0 auto;
     padding: 0 1em 0 1em;
+    letter-spacing: 0.05em;
   }
 
   .scroll h2 {
     font-size: 36px;
-    margin: 0 auto;
+    margin: 0.5em auto 0 auto;
   }
 
   .scroll p {
         font-size: 24px;
-        margin: 0 1em 0 1em;
-        padding: 1em;
+        margin: 0 2em;
+        padding: 0 1em 1em 1em;
         line-height: 2em;
         font-weight: 300;
         letter-spacing: 0.05em;
@@ -147,14 +157,36 @@ html {
     color: white;
     letter-spacing: 0.1em;
   }
+  .wayne h3 {
+    position: relative;
+    font-size: 28px;
+    padding: 0 1em;
+    margin: 0 2em;
+    text-align: left;
+
+  }
+
+  .wayne p {
+    padding-bottom: 0;
+  }
 
   .wayne ul {
-    width: fit-content;
-    margin: 0 auto 2em auto;
-    list-style-position: inside;
-    font-size: 20px;
     text-align: left;
-    padding: 0 1em;
+    list-style-position: inside;
+    font-size: 24px;
+    margin: 0 2em;
+    padding: 0 1em 1em 1em;
+    line-height: 1.25em;
+    font-weight: 350;
+    letter-spacing: 0.05em;
+  }
+
+  .wayne ul li ul {
+    padding-bottom: 0;
+  }
+  
+  .wayne li {
+    padding-top: 0.35em;
   }
 
   .axalta h2 {
@@ -166,5 +198,42 @@ html {
     color: white;
     letter-spacing: 0.1em;
   }
+  .axalta h3 {
+    position: relative;
+    font-size: 28px;
+    padding: 0 1em;
+    margin: 0 2em;
+    text-align: left;
+
+  }
+
+.axalta ul {
+    text-align: left;
+    list-style-position: inside;
+    font-size: 24px;
+    margin: 0 2em;
+    padding: 0 1em 1em 1em;
+    line-height: 1.25em;
+    font-weight: 350;
+    letter-spacing: 0.05em;
+    
+}
+.axalta ul li {
+    padding-top: 0.35em;
+}
+
+  .love h2 {
+    padding: 14em 0 0.5em 0;
+    background-image: url(../Photos/miata.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: bottom;
+    color: white;
+    letter-spacing: 0.1em;
+  }
+
+  
+
+
   
   
