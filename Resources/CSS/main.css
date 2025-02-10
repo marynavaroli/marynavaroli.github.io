@@ -1,0 +1,170 @@
+
+html {
+    font-size: 16px;
+    font-family: 'Oswald', 'Arial', sans-serif;
+    width: 100%;
+    height: 100%;
+    
+  }
+  
+  body {
+    background-color: white;
+    text-align: center;  
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  
+  h1 {
+    padding: 20px;
+    font-size: 32px;
+    text-align: center;
+  
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0px 0;
+    background-color: rgb(183, 183, 255);
+    font-size: 16px;
+    z-index: 2;
+    letter-spacing: 0.1em;
+  
+  }
+
+  header a {
+    text-decoration: none;
+    color: black;
+  }
+
+  header a:hover {
+    text-decoration: none;
+    color: rgb(75, 75, 194);
+  }
+
+  
+  header li {
+    display: inline-block;
+    padding: 0px 30px;
+    
+  }
+
+  main {
+    margin: 0;
+    position: relative;
+    top: 50.5px;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+  }
+
+  .sidebar {
+    display: inline-block;
+    position: fixed;
+    top: 50.5px;
+    left: 0;
+    width: 25%;
+    height: 100%;
+    min-width: 12em;
+    background-image: url(../Photos/lav_sidebar3.jpg);
+    z-index: 1;
+    overflow-y: scroll;
+  }
+
+  .sidebar figure {
+    margin: 0 0 1em 0;
+  }
+
+  .sidebar img {
+    position: static;
+    width: 100%;
+    min-width: 12em;
+  }
+
+  .sidebar h2 {
+    position: relative;
+    margin: 1em 1em 0 1em;
+  }
+
+  .sidebar p {
+    position: relative;
+    padding: 0 1em;
+    font-size: 20px;
+    line-height: 1.5em;
+    text-align: justify;
+    font-weight: 400;
+  }
+
+  .scroll {
+    display: inline-block;
+    position: absolute;
+    left: 25%;
+    overflow: scroll;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    width: 75%;
+    min-width: 36em;
+  }
+
+  .scroll h1 {
+    font-size: 48px;
+    margin: 0 auto;
+    padding: 0 1em 0 1em;
+  }
+
+  .scroll h2 {
+    font-size: 36px;
+    margin: 0 auto;
+  }
+
+  .scroll p {
+        font-size: 24px;
+        margin: 0 1em 0 1em;
+        padding: 1em;
+        line-height: 2em;
+        font-weight: 300;
+        letter-spacing: 0.05em;
+  }
+
+  .sidebar .border {
+    position: static;
+    border: 2px solid black;
+    margin: 0 1em;
+    text-align: justify;
+  }
+
+  .wayne h2 {
+    padding: 14em 0 0.5em 0;
+    background-image: url(../Photos/wayne.jpeg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: bottom;
+    color: white;
+    letter-spacing: 0.1em;
+  }
+
+  .wayne ul {
+    width: fit-content;
+    margin: 0 auto 2em auto;
+    list-style-position: inside;
+    font-size: 20px;
+    text-align: left;
+    padding: 0 1em;
+  }
+
+  .axalta h2 {
+    padding: 14em 0 0.5em 0;
+    background-image: url(../Photos/axalta.jpeg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: bottom;
+    color: white;
+    letter-spacing: 0.1em;
+  }
+  
+  
