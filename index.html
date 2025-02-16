@@ -1,55 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-       <!--- <meta name="viewport" content="width=device-width, initial-scale=1">-->
-        <title>TLA</title>
-        <link href="./Resources/CSS/index.css" type="text/css" rel="stylesheet"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Mary Navaroli</title>
+        <link href="./Resources/CSS/main.css" type="text/css" rel="stylesheet"/>
+        <meta name="viewport" content="width=device-width">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
         <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        
-            <header>
-                <div class = "inline">
-                    <h1 id = "navheader">TLA</h1>
-                    <div id = miatagif>
-                        <img src ="Resources/Photos/miatablack.gif" alt = "Miata zooming">
-                    </div>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href = #Home>Home</a></li>
-                        <li><a href = #Thunky1>Her Story</a></li>
-                        <li><a href = #Thunky2>Thunky</a></li>
-                    </ul>
-                </nav>
-            </header>
+        <header>
+            <h1>Mary Navaroli</h1>
+            <nav>
+                <ul>
+                    <li><a href = #>About Me</a></li>
+                    <li><a href = #edu>Education</a></li>
+                    <li><a href = #work>Work</a></li>
+                    <li><a href = #hobby>Hobbies</a></li>
+                </ul>
+            </nav>
+        </header>
 
-            <main>
-                <div class = "mainimg">
-                    <img src = "Resources/Photos/thunky_polaroid.jpg" alt = "Polaroid of a black Mazda Miata">
-                </div>
-                <h1 class = "mainhead" >Thunky Lovers Anonymous</h1>
-                <p class = "mainp" >A meeting place for those with a passion for Thunky.</p>
-
-                <div class = "secondimg">
-                    <img src = "Resources/Photos/thunky_fb.jpg" alt = "Thunky's intital FaceBook Marketplace listing.">
-                </div>
-
-                <h2 class = "secondhead">A Journey Begins</h2>
-                <p class = "secondp">On a crisp, September day in 2022, a girl sets out on a mission. A mission to a dastardly land (somewhere in western Michigan), with only a dream and all the money in her bank account. On this day, Thunky is born. </p>
-
-                <div id = "background1"></div>
-                <div id = "background2"></div>
-                <div id = "background3"></div>
-            </main>
-        
+        <main>
+            <div id = "headshotcontain">
+                <img id = "headshot" src ="Resources/Photos/Axalta 2024-MN-6.jpg" alt = "Headshot of Mary Navaroli">
+            </div>
+            <h1 id = "aboutme">About Me</h1>
+            <p id = "aboutmep">I'm a full-time Chemical Lab Technician with two years of experience managing projects and computer science student with four years of programming experience at Wayne State University. I am looking to apply my work experience and programming skills in an engaging internship!</p>
             
+            <div class = "background" id = aboutback>
+
+            </div>
+            
+            <div id = "edupiccontain">
+                <img id = "edupic" src ="Resources/Photos/wayne.jpeg" alt = "Wayne State University campus">
+            </div>
+            <h2 id = "edu">Education</h2>
+            <h3 id = "eduschool">Wayne State University | Aug 2020 - Present</h3>
+            <ul id = "edup">
+                <li><strong>Expected graduation:</strong> May 2026</li>
+                <li><strong>GPA:</strong> 3.50</li>
+                <li><strong>Credits completed:</strong> 91 out of 120</li>
+                <li>Used Java, C++, and Python to complete coursework: <ul>
+                    <li>Implemented various sorting and searching algorithms</li>
+                    <li>Utilized data structures such as trees and linked lists</li>
+                    <li>Demonstrated knowledge of object-oriented programming</li>
+                </ul></li>
+                <li>Used HTML and CSS in website design</li>
+                <li>Utilized Swift and Java to develop IOS and Android applications</li>
+                <li>Used Microsoft Active Directory to configure user accounts and permissions</li>
+                <li>Conducted network vulnerability tests using Wireshark and Nessus software</li>
+            </ul>
+
+            <div class = "background" id = eduback>
+
+            </div>
+
+            <div id = "workpiccontain">
+                <img id = "workpic" src ="Resources/Photos/axalta.jpg" alt = "Painted panels undergoing outdoor weathering testing">
+            </div>
+            <h2 id = "work">Work Experience</h2>
+            <h3 id = "workplace">Axalta Coating Systems | Jun 2022 - Present</h3>
+            <ul id = "workp">
+                <li>Managed projects from start to finish by planning testing timelines, communicating with outside labs, and adhering to testing requirements to meet customer needs.</li>
+                <li>Frequently communicated with my team to coordinate project timing, verify project requirements, and determine the proper path forward to resolve issues with testing.</li>
+                <li>Performed weathering, chemical, impact, and adhesion resistance tests to evaluate coating film quality.</li>
+                <li>Recorded appearance, hardness, color, and gloss data to determine effects on coatings over plastic and metal substrates.</li>
+                <li>Performed daily lab inspections to maintain safe lab conditions and ensure that equipment is functional and calibrated.</li>
+                <li>Safely handled and disposed of hazardous chemicals in compliance with safety and environmental regulations.</li>
+            </ul>
+
+            <div class = "background" id = workback>
+
+            </div>
+
+            <div id = "hobbypiccontain">
+                <img id = "hobbypic" src ="Resources/Photos/thunky_storage.jpg" alt = "My cat, Miata">
+            </div>
+            <h2 id = "hobby">Hobbies</h2>
+            <ul id = "hobbyp">
+                <li>Working on my car: <ul>
+                    <li>Routine Maintenance: Oil changes, pad and rotor changes, accessory belt replacements, etc.</li>
+                    <li>Big Jobs: Replaced all components of AC system, replaced EGR tube, installed speakers</li>
+                </ul></li>
+                <li>Learning Russian: <ul>
+                    <li>Self-studying books, movies, music, etc.</li>
+                </ul></li>
+            </ul>
+
+            <div class = "background" id = hobbyback>
+
+            </div>
+
+        </main>
         
-        </div>
+        
     </body>
 </html>
