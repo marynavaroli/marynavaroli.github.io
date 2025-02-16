@@ -1,0 +1,1112 @@
+
+html {
+    font-size: 16px;
+    font-family: 'Zain', 'Arial', sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+body {
+  background-color: rgb(212, 252, 237);
+  text-align: center;  
+  margin: 0;
+  overflow: scroll;
+}
+
+header {
+  background-color: rgb(212, 252, 237);
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  width: 100%;
+  z-index: 10;
+}
+
+header h1 {
+  margin: auto 0;
+  padding: 0;
+  margin-left: 3%;
+  text-align: center;
+  height:fit-content;
+  color: rgb(36, 85, 67);
+}
+
+header nav {
+  width: 40%;
+  height: 100%;
+  min-width: 400px;
+  margin-right: 3%;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  list-style: none;
+  padding: 0;
+  margin:auto 0;
+  text-align: center;
+}
+
+header ul li {
+  text-align: center;
+  width: 90px;
+  margin: 0 7px;
+}
+
+header a {
+  text-align: center;
+  font-weight: 400;
+  color: rgb(36, 85, 67);
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+header a:hover {
+  color: rgb(89, 171, 141);
+}
+
+header a:active {
+  font-size: 1.6rem;
+  color: rgb(129, 200, 174);
+}
+
+main {
+  position: relative;
+  top: 50px;
+  display: grid;
+  grid-template: repeat(12, 1fr) / repeat(12, 1fr);
+  grid-auto-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 15px 30px;
+}
+
+main p {
+  margin: 0 50px 0 0;
+  font-weight: 400;
+  line-height: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: justify;
+  letter-spacing: 0.05rem;
+  overflow-y: scroll;
+}
+
+main ul {
+  max-height: 213px;
+  margin: 0 25px 25px 0;
+  padding: 15px;
+  font-weight: 400;
+  line-height: 1.25rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.05rem;
+  overflow-y: scroll;
+  list-style: inside;
+  text-align: left;
+  background-color: rgb(235, 252, 245);
+  border-radius: 15px;
+}
+
+main li {
+  margin-bottom: 6px;
+}
+
+main li ul {
+  margin: 0;
+  padding: 0 0 0 50px;
+  background-color: none;
+  list-style:circle;
+}
+
+main h1 {
+  margin: 0 30px 0 0;
+  font-size: 4rem;
+  letter-spacing: 0.2rem;
+  line-height: 3.5rem;
+}
+
+main h2 {
+    margin: 0 30px 0 0;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.1rem;
+}
+
+main h3 {
+  margin: 0 30px 0 0;
+  font-size: 1.5rem;
+}
+
+.background {
+  z-index: -1;
+}
+
+#headshotcontain {
+  grid-area: 1 / 2 / span 6 / span 5;
+  width: 100%;
+  min-width: 400px;
+  height: 550px;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+#headshot {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 43%;
+  overflow: hidden;
+}
+
+#aboutme {
+  grid-area: 1 / 7 / span 3 / span 5;
+  align-self: flex-end;
+
+}
+
+#aboutmep {
+  grid-area: 4 / 7 / span 3 / span 5;
+  align-self: flex-start;
+  min-width: 350px;
+  margin: 0 70px 0 40px;
+}
+
+#aboutback {
+  grid-area: 1 / 2 / span 6 / span 10;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  height: 550px;
+}
+
+#edupiccontain {
+  grid-area: 7 / 3 / span 5 / span 4;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+#edupic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  object-position: 10% 50%;
+}
+
+#edu {
+  grid-area: 7 / 7 / span 1 / span 4;
+  align-self: flex-end;
+}
+
+#eduschool {
+  grid-area: 8 / 7 / span 1 / span 4;
+}
+
+#edup {
+  grid-area: 9 / 7 / span 3 / span 4;
+  align-self: flex-start;
+  min-width: 350px;
+}
+
+#eduback {
+  grid-area: 7 / 3 / span 5 / span 8;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  height:100%;
+}
+
+#workpiccontain {
+  grid-area: 12 / 3 / span 5 / span 4;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+#workpic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  object-position: 50% 50%;
+}
+
+#work {
+  grid-area: 12 / 7 / span 1 / span 4;
+  align-self: flex-end;
+}
+
+#workplace {
+  grid-area: 13 / 7 / span 1 / span 4;
+}
+
+#workp {
+  grid-area: 14 / 7 / span 3 / span 4;
+  align-self: flex-start;
+  min-width: 200px;
+}
+
+#workback {
+  grid-area: 12 / 3 / span 5 / span 8;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  height:100%;
+}
+
+#hobbypiccontain {
+  grid-area: 17 / 3 / span 5 / span 4;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+#hobbypic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  object-position: 54% 50%;
+}
+
+#hobby {
+  grid-area: 17 / 7 / span 1 / span 4;
+  align-self: flex-end;
+}
+
+#hobbyp {
+  grid-area: 18 / 7 / span 4 / span 4;
+  align-self: flex-start;
+  min-width: 350px;
+}
+
+#hobbyback {
+  grid-area: 17 / 3 / span 5 / span 8;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  height:100%;
+}
+
+@media only screen and (max-width: 624px) {
+  html {
+    width: 100%;
+    height: 100%;
+    max-width: 624px;
+  }
+
+  main {
+    grid-template: repeat(12, 1fr) / repeat(6, 1fr);
+    min-width: none;
+    max-width: 624px;
+    top: 100px;
+    grid-auto-rows: 1fr;
+    gap: 30px;
+  }
+
+  header {
+    min-width: 0;
+    width: 100%;
+    max-width: 624px;
+    height: 100px;
+    font-size: 2rem;
+  }
+
+  header h1 {
+    display: none;
+  }
+
+  header nav {
+    width: 100%;
+    min-width: 0;
+    margin-right: 0;
+  }
+
+  header ul {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  header ul li {
+    width: auto;
+  }
+
+  header a {
+    width: 100px;
+  }
+
+  main h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+
+  main h2 {
+    line-height: normal;
+    margin-right: 0;
+  }
+
+  main h3 {
+    margin: 0;
+  }
+
+  main p {
+    line-height: 1.5rem;
+  }
+
+  main ul {
+    background-color: rgb(239, 251, 246);
+    margin: 0 25px 25px 0;
+  }
+
+
+  .background {
+    justify-self: center;
+  }
+
+  #headshotcontain {
+    grid-area: 1 / 1 / span 4 / span 6;
+    min-width: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 0;
+  }
+  
+  #headshot {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    overflow: hidden;
+  }
+  
+  #aboutme {
+    grid-area: 4 / 1 / span 1 / span 3;
+    z-index: 2;
+    width: 90%;
+    justify-self: center;
+    align-self: center;
+    
+  }
+  
+  #aboutmep {
+    grid-area: 5 / 1 / span 2 / span 6;
+    margin: 0 10%;
+    width: 80%;
+    min-width: 0;
+    max-height: 327px;
+    text-align: center;
+    align-self: center;
+    overflow:visible;
+  }
+  
+  #aboutback {
+    grid-area: 4 / 1 / span 1 / span 3;
+    background-color: rgba(235, 252, 245, 0.6);
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  #edupiccontain {
+    grid-area: 7 / 1 / span 3 / span 6;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 0;
+  }
+  
+  #edupic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    object-position: 10% 50%;
+  }
+  
+  #edu {
+    grid-area: 9 / 1 / span 1 / span 6;
+    align-self: flex-start;
+    z-index: 2;
+    height: 40%;
+    text-align: center;
+    line-height: normal;
+    margin-top: 10px;
+  }
+  
+  #eduschool {
+    grid-area: 9 / 1 / span 1 / span 6;
+    z-index: 2;
+    margin: 0;
+    height: 45%;
+    text-align: center;
+    line-height: normal;
+    align-self: flex-end;
+  }
+  
+  #edup {
+    grid-area: 10 / 1 / span 2 / span 6;
+    align-self: flex-start;
+    min-width: 0;
+    margin: 0;
+    max-height:274px;
+  }
+  
+  #eduback {
+    grid-area: 9 / 1 / span 1 / span 6;
+    background-color: rgba(235, 252, 245, 0.6);
+    height: 80%;
+    width: 100%;
+    z-index: 1;
+    border-radius: 0;
+  }
+  
+  #workpiccontain {
+    grid-area: 12 / 1 / span 3 / span 6;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 0;
+  }
+  
+  #workpic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    object-position: 50% 50%;
+  }
+  
+  #work {
+    grid-area: 14 / 1 / span 1 / span 6;
+    align-self: flex-start;
+    z-index: 2;
+    height: 40%;
+    text-align: center;
+    line-height: normal;
+    margin-top: 10px;
+  }
+  
+  #workplace {
+    grid-area: 14 / 1 / span 1 / span 6;
+    align-self: flex-end;
+    z-index: 2;
+    height: 45%;
+    text-align: center;
+    line-height: normal;
+  }
+  
+  #workp {
+    grid-area: 15 / 1 / span 2 / span 6;
+    align-self: flex-start;
+    min-width: 0;
+    margin: 0;
+    max-height:274px;
+  }
+  
+  #workback {
+    grid-area: 14 / 1 / span 1 / span 6;
+    background-color: rgba(235, 252, 245, 0.6);
+    border-radius: 0;
+    height: 80%;
+    width: 100%;
+    z-index: 1;
+
+  }
+  
+  #hobbypiccontain {
+    grid-area: 17 / 1 / span 3 / span 6;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 0;
+  }
+  
+  #hobbypic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    object-position: 54% 50%;
+  }
+  
+  #hobby {
+    grid-area: 19 / 1 / span 1 / span 6;
+    z-index: 2;
+    align-self: center;
+  }
+  
+  #hobbyp {
+    grid-area: 20 / 1 / span 3 / span 6;
+    align-self: flex-start;
+   
+    min-width: 0;
+    margin: 0;
+    max-height:274px;
+  }
+  
+  #hobbyback {
+    grid-area: 19 / 1 / span 1 / span 6;
+    background-color: rgba(235, 252, 245, 0.6);
+    border-radius: 0;
+    align-self: center;
+    height: 80%;
+    width: 100%;
+    z-index: 1;
+  }
+
+}
+
+@media only screen and (max-width: 389px) {
+  #aboutme {
+    font-size: 2rem;
+  }
+
+  #edu {
+    font-size: 2rem;
+  }
+
+  #work {
+    font-size: 2rem;
+  }
+
+  #hobby {
+    font-size: 2rem;
+  }
+
+  #eduschool {
+    font-size: 1.25rem;
+  }
+
+  #workplace {
+    font-size: 1.25rem;
+  }
+
+}
+
+@media only screen and (max-width: 330px) {
+  #aboutme {
+    font-size: 1.75rem;
+  }
+
+  #eduschool {
+    font-size: 1.125rem;
+  }
+
+  #workplace {
+    font-size: 1.125rem;
+  }
+
+
+
+  #edup {
+    font-size: 0.9rem;
+  }
+
+  #workp {
+    font-size: 0.9rem;
+  }
+
+  #hobbyp {
+    font-size: 0.9rem;
+  }
+
+  
+}
+
+@media only screen and (max-width: 298px) {
+  #aboutme {
+    font-size: 1.5rem;
+  }
+
+  #eduschool {
+    font-size: 1rem;
+  }
+
+  #workplace {
+    font-size: 1rem;
+  }
+
+  #aboutmep {
+    line-height: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 269px) {
+  
+
+  #eduschool {
+    font-size: 1rem;
+  }
+
+  #workplace {
+    font-size: 1rem;
+  }
+
+  #aboutmep {
+    line-height: 1rem;
+  }
+}
+
+@media only screen and (max-width: 246px) {
+  
+
+  #eduschool {
+    font-size: 1rem;
+  }
+
+  #workplace {
+    font-size: 1rem;
+  }
+
+  #aboutmep {
+    line-height: 1rem;
+  }
+
+  #edu {
+    font-size: 1.5rem;
+  }
+
+  #work {
+    font-size: 1.5rem;
+  }
+
+  #hobby {
+    font-size: 1.5rem;
+  }
+
+  #edup, li ul li {
+    font-size: 0.8rem;
+    line-height: 0.9rem;
+  }
+
+  #workp {
+    font-size: 0.8rem;
+    line-height: 0.9rem;
+  }
+
+  #hobbyp {
+    font-size: 0.8rem;
+    line-height: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 208px) {
+  #aboutme {
+    font-size: 1.25rem;
+  }
+
+  #eduschool {
+    font-size: 1rem;
+  }
+
+  #workplace {
+    font-size: 1rem;
+  }
+
+  #aboutmep {
+    font-size: 0.9rem;
+    line-height: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 195px) {
+  header {
+    height: 150px;
+  }
+
+  main {
+    top: 150px;
+  }
+}
+
+@media only screen and (max-width: 975px) and (min-width: 825px){
+  main {
+    grid-template: repeat(8, 1fr) / repeat(8, 1fr);
+    grid-auto-rows: 1fr;
+  }
+
+  img {
+    border-radius: 30px;
+    min-width: 200px;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  #headshotcontain {
+    grid-area: 1 / 1 / span 4 / span 4;
+    min-width: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 0;
+  }
+  
+  #headshot {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    overflow: hidden;
+  }
+  
+  #aboutme {
+    grid-area: 1 / 5 / span 1 / span 4;
+    z-index: 2;
+    margin: 0;
+    justify-self: center;
+    align-self: flex-end;
+  }
+  
+  #aboutmep {
+    grid-area: 2 / 5 / span 3 / span 4;
+    text-align: center;
+    align-self: center;
+    min-width: 200px;
+  }
+  
+  #aboutback {
+    grid-area: 1 / 1 / span 4 / span 8;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    height: 100%;
+  }
+
+  #edupiccontain {
+    grid-area: 5 / 2 / span 3 / span 3;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 0;
+  }
+  
+  #edupic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    object-position: 10% 50%;
+  }
+  
+  #edu {
+    grid-area: 5 / 5 / span 1 / span 3;
+    align-self: flex-start;
+    text-align: center;
+    line-height: normal;
+    margin: 0;
+  }
+  
+  #eduschool {
+    grid-area: 5 / 5 / span 1 / span 3;
+    margin: 0;
+    text-align: center;
+    line-height: normal;
+    align-self: flex-end;
+
+  }
+  
+  #edup {
+    grid-area: 6 / 5 / span 2 / span 3;
+    align-self: flex-start;
+    min-width: 0;
+  }
+  
+  #eduback {
+    grid-area: 5 / 2 / span 3 / span 6;
+    background-color: white;
+    border-radius: 30px;
+  }
+
+  #workpiccontain {
+    grid-area: 8 / 2 / span 3 / span 3;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 0;
+  }
+  
+  #workpic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    object-position: 50% 50%;
+  }
+  
+  #work {
+    grid-area: 8 / 5 / span 1 / span 3;
+    align-self: flex-start;
+    z-index: 2;
+    height: 40%;
+    text-align: center;
+    line-height: normal;
+    margin-top: 10px;
+  }
+  
+  #workplace {
+    grid-area: 8 / 5 / span 1 / span 3;
+    align-self: flex-end;
+    z-index: 2;
+    height: 45%;
+    text-align: center;
+    line-height: normal;
+  }
+  
+  #workp {
+    grid-area: 9 / 5 / span 2 / span 3;
+    align-self: flex-start;
+    min-width: 0;
+  }
+  
+  #workback {
+    grid-area: 8 / 2 / span 3 / span 6;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+
+  }
+
+  #hobbypiccontain {
+    grid-area: 11 / 2 / span 3 / span 3;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 0;
+  }
+  
+  #hobbypic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    object-position: 54% 50%;
+  }
+  
+  #hobby {
+    grid-area: 11 / 5 / span 1 / span 3;
+    z-index: 2;
+    align-self: center;
+  }
+  
+  #hobbyp {
+    grid-area: 12 / 5 / span 2 / span 3;
+    align-self: flex-start;
+    min-width: 0;
+    height:200px;
+  }
+  
+  #hobbyback {
+    grid-area: 11 / 2 / span 3 / span 6;
+    background-color: white;
+    border-radius: 30px;
+    align-self: center;
+  }
+
+}
+
+@media only screen and (max-width: 825px) and (min-width: 625px){
+  main {
+    grid-template: repeat(8, 1fr) / repeat(8, 1fr);
+    grid-auto-rows: 1fr;
+  }
+
+  img {
+    border-radius: 30px;
+    min-width: 200px;
+  }
+
+  
+
+  
+
+  #headshotcontain {
+    grid-area: 1 / 1 / span 4 / span 4;
+    min-width: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 0;
+  }
+  
+  #headshot {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    overflow: hidden;
+  }
+  
+  #aboutme {
+    grid-area: 1 / 5 / span 1 / span 4;
+    z-index: 2;
+    margin: 0 30px 0 0;
+    justify-self: center;
+    align-self: flex-end;
+  }
+  
+  #aboutmep {
+    grid-area: 2 / 5 / span 3 / span 4;
+    text-align: center;
+    align-self: center;
+    min-width:100px;
+    line-height: 1.75rem;
+    margin-bottom:30px;
+  }
+  
+  #aboutback {
+    grid-area: 1 / 1 / span 4 / span 8;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    height: 100%;
+  }
+
+  #edupiccontain {
+    grid-area: 5 / 1 / span 3 / span 4;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 0;
+  }
+  
+  #edupic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    object-position: 10% 50%;
+  }
+  
+  #edu {
+    grid-area: 5 / 5 / span 1 / span 4;
+    align-self: flex-start;
+    text-align: center;
+    line-height: normal;
+    margin: 10px 30px 0 0;
+    font-size: 1.75rem;
+  }
+  
+  #eduschool {
+    grid-area: 5 / 5 / span 1 / span 4;
+    margin: 0 30px 0 0;
+    text-align: center;
+    line-height: normal;
+    align-self: flex-end;
+    font-size: 1.25rem;
+  }
+  
+  #edup {
+    grid-area: 6 / 5 / span 2 / span 4;
+    align-self: flex-start;
+    min-width: 0;
+    height: 230px;
+    max-height:450px;
+  }
+  
+  #eduback {
+    grid-area: 5 / 1 / span 3 / span 8;
+    background-color: white;
+    border-radius: 30px;
+  }
+
+  #workpiccontain {
+    grid-area: 8 / 1 / span 3 / span 4;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 0;
+  }
+  
+  #workpic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    object-position: 50% 50%;
+  }
+  
+  #work {
+    grid-area: 8 / 5 / span 1 / span 4;
+    align-self: flex-start;
+    text-align: center;
+    line-height: normal;
+    margin-top: 10px;
+    font-size: 1.75rem;
+  }
+  
+  #workplace {
+    grid-area: 8 / 5 / span 1 / span 4;
+    align-self: flex-end;
+    text-align: center;
+    line-height: normal;
+    font-size: 1.25rem;
+  }
+  
+  #workp {
+    grid-area: 9 / 5 / span 2 / span 4;
+    align-self: flex-start;
+    min-width: 0;
+    height: 230px;
+    max-height:450px;
+  }
+  
+  #workback {
+    grid-area: 8 / 1 / span 3 / span 8;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+
+  }
+
+  #hobbypiccontain {
+    grid-area: 11 / 1 / span 3 / span 4;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 0;
+  }
+  
+  #hobbypic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    object-position: 54% 50%;
+  }
+  
+  #hobby {
+    grid-area: 11 / 5 / span 1 / span 4;
+    z-index: 2;
+    align-self: center;
+    font-size: 1.75rem;
+  }
+  
+  #hobbyp {
+    grid-area: 12 / 5 / span 2 / span 4;
+    align-self: flex-start;
+    min-width: 0;
+    max-height:450px;
+
+  }
+  
+  #hobbyback {
+    grid-area: 11 / 1 / span 3 / span 8;
+    background-color: white;
+    border-radius: 30px;
+    align-self: center;
+  }
+
+}
+  
+ 
+
+
+  
+
+
+  
+  
