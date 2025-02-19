@@ -93,6 +93,8 @@ main {
     flex-direction: column;
     justify-content: center;
     border-radius: 30px;
+    width: 80%;
+    justify-self: center;
 }
 
 main h1 {
@@ -109,14 +111,16 @@ main h2 {
 }
 
 main p {
-    font-size: 1.25rem;
+    font-size: 1rem;
     letter-spacing: 0.05rem;
     margin: 0;
-    padding: 0 30px;
+    margin-top: 5%;
+    padding: 0 20px;
     word-break:keep-all;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@media only screen and (max-width: 638px) {
+@media only screen and (max-width: 765px) {
     header h1 {
         display: none;
     }
@@ -139,6 +143,8 @@ main p {
 
     #card {
         grid-area: 2 / 1 / span 1 / span 1;
+        border-radius: 0;
+        width: 100%;
     }
 }
 
@@ -148,7 +154,7 @@ main p {
     }
 
     main p {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 }
 

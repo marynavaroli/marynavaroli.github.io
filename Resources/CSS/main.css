@@ -93,7 +93,6 @@ main p {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: justify;
   letter-spacing: 0.05rem;
-  overflow-y: scroll;
 }
 
 main ul {
@@ -238,7 +237,7 @@ main h3 {
   align-self: flex-end;
   min-width: 0;
   min-height: 0;
-  overflow: scroll;
+  overflow-y: scroll;
   z-index: 1;
 }
 
@@ -292,7 +291,7 @@ main h3 {
   grid-area: 14 / 7 / span 3 / span 4;
   align-self: flex-start;
   min-width: 200px;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 #workback {
@@ -330,7 +329,7 @@ main h3 {
 #hobbyp {
   grid-area: 18 / 7 / span 4 / span 4;
   align-self: flex-start;
-  overflow: scroll;
+  overflow-y: scroll;
   min-width: 0;
   min-height: 0;
   height: 310px;
@@ -518,7 +517,6 @@ main h3 {
     margin: 0;
     height:277px;
     z-index: 3;
-    overflow: scroll;
   }
   
   #eduback {
@@ -584,7 +582,6 @@ main h3 {
     margin: 0;
     height:277px;
     z-index: 5;
-    overflow: scroll;
   }
   
   #workback {
@@ -932,7 +929,6 @@ main h3 {
     grid-area: 6 / 5 / span 2 / span 3;
     align-self: flex-start;
     min-width: 0;
-    overflow: scroll;
   }
   
   #eduback {
@@ -993,7 +989,6 @@ main h3 {
     align-self: flex-start;
     min-width: 0;
     z-index: 5;
-    overflow: scroll;
   }
   
   #workback {
@@ -1159,7 +1154,6 @@ main h3 {
     min-width: 0;
     height: 230px;
     max-height:450px;
-    overflow: scroll;
   }
   
   #eduback {
@@ -1219,7 +1213,6 @@ main h3 {
     min-width: 0;
     height: 230px;
     max-height:450px;
-    overflow: scroll;
   }
   
   #workback {
@@ -1259,8 +1252,8 @@ main h3 {
     grid-area: 12 / 5 / span 2 / span 4;
     align-self: flex-start;
     min-width: 0;
-    max-height:450px;
-    height:230px;
+    max-height: 450px;
+    height: 230px;
 
   }
   
