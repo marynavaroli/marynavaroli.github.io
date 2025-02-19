@@ -1,0 +1,183 @@
+html {
+    font-size: 16px;
+    font-family: 'Zain', 'Arial', sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+body {
+  background-color: rgb(212, 252, 237);
+  text-align: center; 
+  width: 100%;
+  height: 100%; 
+  margin: 0;
+  overflow: scroll;
+}
+
+header {
+  background-color: rgb(212, 252, 237);
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  width: 100%;
+  z-index: 20;
+}
+
+header h1 {
+  margin: auto 0;
+  padding: 0;
+  margin-left: 3%;
+  text-align: center;
+  height:fit-content;
+  color: rgb(36, 85, 67);
+}
+
+header nav {
+  width: 250px;
+  height: 100%;
+  min-width: 200px;
+  margin-right: 3%;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  list-style: none;
+  padding: 0;
+  margin: auto 0;
+  text-align: center;
+}
+
+header ul li {
+  text-align: center;
+  width: 90px;
+  margin: 0 7px;
+}
+
+header a {
+  text-align: center;
+  font-weight: 400;
+  color: rgb(36, 85, 67);
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+header a:hover {
+  color: rgb(89, 171, 141);
+}
+
+header a:active {
+  font-size: 1.6rem;
+  color: rgb(129, 200, 174);
+}
+
+main {
+    height: 100%;
+    position: relative;
+    display: grid;
+    grid-template: repeat(8, 1fr) / repeat(8, 1fr);
+    grid-auto-rows: 1fr;
+    color: rgb(36, 85, 67);
+    text-align: center;
+}
+
+#card {
+    grid-area: 3 / 3 / span 4 / span 4;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+main h1 {
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    margin: 0;
+    text-decoration: underline;
+}
+
+main h2 {
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    margin: 0;
+}
+
+main p {
+    font-size: 1.25rem;
+    letter-spacing: 0.05rem;
+    margin: 0;
+    padding: 0 30px;
+    word-break:keep-all;
+}
+
+@media only screen and (max-width: 638px) {
+    header h1 {
+        display: none;
+    }
+
+    header nav {
+        width: 100%;
+        margin-right: 0;
+        min-width: 0;
+    }
+
+    header ul {
+        width: 100%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    main {
+        grid-template: repeat(3, 1fr) / 1fr;
+    }
+
+    #card {
+        grid-area: 2 / 1 / span 1 / span 1;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    header {
+        height: 100px;
+    }
+
+    main p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 273px) {
+    main p {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 213px) {
+    main h1 {
+        font-size: 2rem;
+        letter-spacing: 0;
+    }
+
+    main h2 {
+        font-size: 1.5rem;
+        letter-spacing: 0;
+    }
+
+    main p {
+        font-size: 0.8rem;
+        letter-spacing: 0;
+        text-wrap: nowrap;
+        margin: 0 5px;
+    }
+
+    #card {
+        height: 70%;
+        align-self: center;
+    }
+}
