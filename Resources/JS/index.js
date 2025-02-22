@@ -227,23 +227,31 @@ hobbyclick.addEventListener('mouseout', unHighlightArrowHobby);
 
 
 function resetLists(event) {
+    educlick.style.display = "none";
+    workclick.style.display = "none";
+    hobbyclick.style.display = "none";
+    setTimeout(()=>{
+        educlick.style.display = "";
+        workclick.style.display = "";
+        hobbyclick.style.display = "";
+        educlick.style.gridRow = '';
+        edup.style.gridRow = '';
+        workclick.style.gridRow = '';
+        workp.style.gridRow = '';
+        hobbyclick.style.gridRow = '';
+        hobbyp.style.gridRow = '';
+      }, 500);
     educlick.style.transform = '';
-    educlick.style.gridRow = '';
-    edup.style.gridRow = '';
     educlick.style.height = '';
     edup.style.height = '';
     educlick.style.marginTop = '';
     edup.style.marginTop = '';
     workclick.style.transform = '';
-    workclick.style.gridRow = '';
-    workp.style.gridRow = '';
     workclick.style.height = '';
     workp.style.height = '';
     workclick.style.marginTop = '';
     workp.style.marginTop = '';
     hobbyclick.style.transform = '';
-    hobbyclick.style.gridRow = '';
-    hobbyp.style.gridRow = '';
     hobbyclick.style.height = '';
     hobbyp.style.height = '';
     hobbyclick.style.marginTop = '';

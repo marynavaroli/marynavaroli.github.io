@@ -328,6 +328,7 @@ main h3 {
 
 #hobbyup {
   display: none;
+  transform: rotate(-135deg);
 }
 
 #hobbyp {
