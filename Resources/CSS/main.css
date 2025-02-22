@@ -12,7 +12,6 @@ body {
   background-color: rgb(212, 252, 237);
   text-align: center;  
   margin: 0;
-  overflow: scroll;
 }
 
 header {
@@ -199,6 +198,7 @@ main h3 {
   height: 100%;
   overflow: hidden;
   border-radius: 30px;
+  max-height: 460px;
 }
 
 #edupic {
@@ -239,6 +239,7 @@ main h3 {
   min-height: 0;
   overflow-y: scroll;
   z-index: 1;
+  transition: height 500ms;
 }
 
 #eduback {
@@ -254,6 +255,7 @@ main h3 {
   height: 100%;
   overflow: hidden;
   border-radius: 30px;
+  max-height: 460px;
 }
 
 #workpic {
@@ -289,9 +291,10 @@ main h3 {
 
 #workp {
   grid-area: 14 / 7 / span 3 / span 4;
-  align-self: flex-start;
+  align-self: flex-end;
   min-width: 200px;
   overflow-y: scroll;
+  transition: height 500ms;
 }
 
 #workback {
@@ -307,6 +310,7 @@ main h3 {
   height: 100%;
   overflow: hidden;
   border-radius: 30px;
+  max-height: 460px;
 }
 
 #hobbypic {
@@ -328,11 +332,12 @@ main h3 {
 
 #hobbyp {
   grid-area: 18 / 7 / span 4 / span 4;
-  align-self: flex-start;
+  align-self: flex-end;
   overflow-y: scroll;
   min-width: 0;
   min-height: 0;
   height: 310px;
+  transition: height 500ms;
 }
 
 #hobbyback {
@@ -512,7 +517,7 @@ main h3 {
   
   #edup {
     grid-area: 9 / 1 / span 2 / span 6;
-    align-self: flex-start;
+    align-self: flex-end;
     min-width: 0;
     margin: 0;
     height:277px;
@@ -577,7 +582,7 @@ main h3 {
   
   #workp {
     grid-area: 14 / 1 / span 2 / span 6;
-    align-self: flex-start;
+    align-self: flex-end;
     min-width: 0;
     margin: 0;
     height:277px;
@@ -616,12 +621,24 @@ main h3 {
     align-self: center;
   }
   
-  #hobbyp {
-    grid-area: 19 / 1 / span 3 / span 6;
+  #hobbyup {
+    grid-area: 19 / 1 / span 1 / span 6;
+    z-index: 10;
+    text-align: end;
+    margin: 0;
+    margin-right: 20px;
+    margin-top: 20px;
+    line-height: 0;
+    overflow: visible;
     align-self: flex-start;
+  }
+
+  #hobbyp {
+    grid-area: 19 / 1 / span 2 / span 6;
+    align-self: flex-end;
     min-width: 0;
     margin: 0;
-    max-height:274px;
+    height:277px;
   }
   
   #hobbyback {
@@ -927,7 +944,7 @@ main h3 {
   
   #edup {
     grid-area: 6 / 5 / span 2 / span 3;
-    align-self: flex-start;
+    align-self: flex-end;
     min-width: 0;
   }
   
@@ -986,7 +1003,7 @@ main h3 {
   
   #workp {
     grid-area: 9 / 5 / span 2 / span 3;
-    align-self: flex-start;
+    align-self: flex-end;
     min-width: 0;
     z-index: 5;
   }
@@ -1036,7 +1053,7 @@ main h3 {
   
   #hobbyp {
     grid-area: 12 / 5 / span 2 / span 3;
-    align-self: flex-start;
+    align-self: flex-end;
     min-width: 0;
     height:213px;
   }
@@ -1150,7 +1167,7 @@ main h3 {
 
   #edup {
     grid-area: 6 / 5 / span 2 / span 4;
-    align-self: flex-start;
+    align-self: flex-end;
     min-width: 0;
     height: 230px;
     max-height:450px;
@@ -1209,7 +1226,7 @@ main h3 {
   
   #workp {
     grid-area: 9 / 5 / span 2 / span 4;
-    align-self: flex-start;
+    align-self: flex-end;
     min-width: 0;
     height: 230px;
     max-height:450px;
@@ -1250,7 +1267,7 @@ main h3 {
 
   #hobbyp {
     grid-area: 12 / 5 / span 2 / span 4;
-    align-self: flex-start;
+    align-self: flex-end;
     min-width: 0;
     max-height: 450px;
     height: 230px;
