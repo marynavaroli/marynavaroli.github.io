@@ -34,7 +34,7 @@ header h1 {
 }
 
 header nav {
-  width: 250px;
+  width: 400px;
   height: 100%;
   min-width: 200px;
   margin-right: 3%;
@@ -53,7 +53,7 @@ header ul {
 
 header ul li {
   text-align: center;
-  width: 90px;
+  width: 100px;
   margin: 0 7px;
 }
 
