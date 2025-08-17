@@ -10,6 +10,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
         <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
+
+        <script src = "Resources/JS/api.js" defer></script>
     </head>
     <body>
         <header>
@@ -26,8 +28,16 @@
             <div id = "card">
                 <h1>Car Image Classifier</h1>
                 <h2>K Nearest Neighbors Algorithm</h2>
+                <p>The K Nearest Neighbors Algorithm, is a supervised machine learning algorithm. It compares a new data point with all of its training data to find the unlabelled data point's K nearest neighbors. Each feature of the compared data points are entered into the distance formula. The K number of data points with the shortest distance from the unlabelled data point are selected. The unlabelled data point is labelled with the class that the majority of its K nearest neighbors have.</p>
                 <p>Upload an image of an Audi, Hyundai, or Toyota car and the classifier will determine which of these brands it is!</p>
-                <p>Upload here: </p>
+
+                <form id = "imgForm" method="post" enctype="multipart/form-data">
+                    <label for="jpeg-upload">Upload JPEG:</label>
+                    <input type="file" id="imgInput" name="jpegFile" accept="image/jpeg, .jpeg, .jpg">
+                    <button type="submit">Upload</button>
+                </form>
+                <p id = "result"></p>
+                <img id = "imageUpload" src="" alt="User uploaded car" width="500" height="600">
             </div>
         </main>
     </body>
