@@ -25,7 +25,7 @@
             </nav>
         </header>
         <main>
-            <div id = "card">
+            <div class = "card">
                 <h1>Car Image Classifier</h1>
                 <h2>K Nearest Neighbors Algorithm</h2>
                 <p>The K Nearest Neighbors Algorithm, is a supervised machine learning algorithm. It compares a new data point with all of its training data to find the unlabelled data point's K nearest neighbors. Each feature of the compared data points are entered into the distance formula. The K number of data points with the shortest distance from the unlabelled data point are selected. The unlabelled data point is labelled with the class that the majority of its K nearest neighbors have.</p>
@@ -36,8 +36,38 @@
                     <input type="file" id="imgInput" name="jpegFile" accept="image/jpeg, .jpeg, .jpg">
                     <button type="submit">Upload</button>
                 </form>
-                <p id = "result"></p>
+                <p class = "result" id = "brand"></p>
                 <img id = "imageUpload" src="" alt="User uploaded car" width="500" height="600">
+            </div>
+            <div class = "card">
+                <h1>Electric Vehicle Efficiency Predictor</h1>
+                <h2>Bagging Regression</h2>
+                <p>Using top speed, torque, fast charging power, height, and body style data from 478 EV models, this bagging regressor was trained to predict EV Efficiency. The Bagging Regressor uses 50 K-Neighbors Regressors to make its final prediction. Sequential Forward Selection was used to select 5 features. Grid Search was used to select 50 estimators. The validation R Squared score of this model is 0.78.</p>
+
+                <form id = "evUpload" method="post">
+                    <div id = "inputs">
+                    <label for="speed">Enter Top-Speed (km/hr):</label>
+                    <input type="text" id="speed" name="speed">
+                    <label for="torque">Enter Vehicle Torque (nm):</label>
+                    <input type="text" id="torque" name="torque">
+                    <label for="charging">Enter Fast Charging Power (kW DC):</label>
+                    <input type="text" id="charging" name="charging">
+                    <label for="height">Enter Vehicle Height (mm):</label>
+                    <input type="text" id="height" name="height">
+                    <label for="body">Select Body Style:</label>
+                    <select id="body" name="body">
+                        <option value="" disabled selected>Body Style</option>
+                        <option value="SUV">SUV</option>
+                        <option value="Sedan">Sedan</option>
+                        <option value="Hatchback">Hatchback</option>
+                        <option value="Small Passenger Van">Small Passenger Van</option>
+                        <option value="Liftback Sedan">Liftback Sedan</option>
+                      </select>
+                    </div>
+                    <button type="submit">Upload</button>
+                </form>
+                <p class = "result" id = "prediction"></p>
+                
             </div>
         </main>
     </body>

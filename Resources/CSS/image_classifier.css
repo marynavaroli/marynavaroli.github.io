@@ -7,6 +7,10 @@ html {
     padding: 0;
   }
   
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
   body {
     background-color: rgb(212, 252, 237);
     text-align: center;
@@ -14,9 +18,10 @@ html {
     width: 100%;
     min-height: 100%;
     overflow-x: hidden;
+    color: rgb(36, 85, 67);
   }
   
-  /* ---------------- HEADER ---------------- */
+  /* ---------------- HEADER (unchanged) ---------------- */
   header {
     background-color: rgb(212, 252, 237);
     position: fixed;
@@ -25,7 +30,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
+    height: 60px;
     width: 100%;
     z-index: 20;
   }
@@ -48,12 +53,11 @@ html {
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    /*gap: 25px;*/
     list-style: none;
     padding: 0;
     margin: auto 0;
   }
-
+  
   header ul li {
     text-align: center;
     width: 100px;
@@ -80,82 +84,94 @@ html {
   
   /* ---------------- MAIN ---------------- */
   main {
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-  }
-  
-  #card {
-    background-color: white;
-    border-radius: 30px;
-    box-shadow: 0 4px 12px rgba(36, 85, 67, 0.25);
-    max-width: 800px;
-    width: 100%;
-    padding: 40px 30px;
+    margin-top: 60px; /* ensures content clears fixed header */
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 30px; /* space between multiple cards */
+    padding: 20px;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(36, 85, 67, 0.25);
+    max-width: 1000px;
+    width: 95%;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px; /* space between text, headings, form, etc. */
+    animation: fadeIn 0.6s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
   }
   
   main h1 {
-    font-size: 3rem;
-    letter-spacing: 0.1rem;
-    margin: 0 0 10px 0;
-    color: rgb(36, 85, 67);
+    font-size: 2.5rem;
+    letter-spacing: 0.05rem;
+    margin: 0;
   }
   
   main h2 {
     font-size: 1.6rem;
-    margin: 0 0 20px 0;
     color: rgb(60, 100, 85);
+    margin: 0;
   }
   
   main p {
-    font-size: 1rem;
-    line-height: 1.5;
-    margin: 0 0 30px 0;
-    padding: 0 10px;
+    font-size: 1.1rem;
+    line-height: 1.6;
     color: rgb(50, 70, 60);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
   }
   
   /* ---------------- FORM ---------------- */
   #imgForm {
-    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 15px;
+    align-items: stretch;
+    gap: 20px; /* spacing between inputs */
+    width: 100%;
+    max-width: 500px;
   }
   
-  #imgInput {
+  input, select, button {
     font-size: 1rem;
     border: 2px solid rgb(36, 85, 67);
-    padding: 6px;
     border-radius: 8px;
+    padding: 10px 12px;
     background-color: #f9f9f9;
   }
   
-  #imgForm button {
+  select {
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+  
+  button {
     background-color: rgb(36, 85, 67);
     color: white;
-    border: none;
-    padding: 10px 25px;
-    font-size: 1.1rem;
-    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
   
-  #imgForm button:hover {
+  button:hover {
     background-color: rgb(89, 171, 141);
+  }
+  
+  button:active {
+    background-color: rgb(129, 200, 174);
   }
   
   /* ---------------- IMAGE PREVIEW ---------------- */
   #imageUpload {
     display: none;
-    margin-top: 25px;
+    margin-top: 20px;
     border-radius: 15px;
     max-width: 100%;
     height: auto;
@@ -164,10 +180,9 @@ html {
   
   /* ---------------- RESULT ---------------- */
   #result {
-    margin-top: 25px;
-    font-size: 1.3rem;
+    margin-top: 15px;
+    font-size: 1.2rem;
     font-weight: bold;
-    color: rgb(36, 85, 67);
     transition: color 0.3s ease-in-out;
   }
   
@@ -178,59 +193,135 @@ html {
   #result.error {
     color: rgb(200, 60, 60);
   }
+
+  /* Style the EV form */
+
+
+#evUpload {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px; /* space between groups */
+    max-width: 95%;
+  }
+
+  #inputs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  /* Wrap each label+input block nicely */
+  #evUpload label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(36, 85, 67);
+    min-width: 215px;
+    align-self: center;
+  }
+  
+  #evUpload input,
+  #evUpload select {
+    width: 215px;
+    min-width: 100px;
+    padding: 10px 12px;
+    font-size: 1rem;
+    border: 2px solid rgb(36, 85, 67);
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin-bottom: 12px; /* space between input and next label */
+  }
+  
+  /* Style the button */
+  #evUpload button {
+    align-self: center;
+    justify-self: center;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: rgb(36, 85, 67);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #evUpload button:hover {
+    background-color: rgb(89, 171, 141);
+  }
   
   /* ---------------- RESPONSIVE ---------------- */
-  @media only screen and (max-width: 768px) {
-    header h1 {
-      display: none;
-    }
-
-    header nav {
-      width: 100%;
-      margin-right: 0;
-      min-width: 0;
+  @media (max-width: 1080px) {
+    #inputs {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+        height: 175px;
+      }
+      #evUpload input,
+      #evUpload select,
+      #evUpload label {
+        margin-right: 10px;
+      }
   }
-  
-    header ul {
-      justify-content: space-around;
-      flex-wrap: wrap;
+  @media (max-width: 886px) {
+    #inputs {
+        height: 275px;
     }
-  
-    main h1 {
-      font-size: 2.2rem;
+  }
+  @media (max-width: 886px) {
+    #inputs {
+        height: 450px;
     }
+  }
+  @media (max-width: 768px) {
+    header h1 { display: none; }
+    header nav { width: 100%; margin-right: 0; min-width: 0; }
+    header ul { justify-content: space-around; flex-wrap: wrap; }
   
-    main h2 {
-      font-size: 1.3rem;
-    }
-  
-    #card {
+    .card {
       border-radius: 15px;
-      padding: 25px 15px;
+      padding: 30px 20px;
+      gap: 20px;
     }
+  
+    main h1 { font-size: 2rem; }
+    main h2 { font-size: 1.2rem; }
+  }
+
+  @media only screen and (max-width: 624px) {
+    header {
+        min-width: 0;
+        width: 100%;
+        max-width: 624px;
+        height: 60px;
+        font-size: 2rem;
+      }
+
+      header nav {
+        width: 100%;
+        min-width: 0;
+        margin-right: 0;
+      }
+
+      header ul {
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
+      header ul li {
+        width: auto;
+      }
   }
   
-  @media only screen and (max-width: 400px) {
-    header {
-      flex-direction: column;
-      height: auto;
-      padding: 10px 0;
-    }
-  
-    header nav {
-      margin-right: 0;
-    }
-  
-    main h1 {
-      font-size: 1.8rem;
-    }
-  
-    main h2 {
-      font-size: 1.2rem;
-    }
-  
-    main p {
-      font-size: 0.9rem;
-    }
+  @media (max-width: 400px) {
+    
+    main h1 { font-size: 1.6rem; }
+    main h2 { font-size: 1rem; }
+    main p { font-size: 0.9rem; }
   }
   

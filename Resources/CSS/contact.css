@@ -21,7 +21,7 @@ header {
   position: fixed;
   display: flex;
   justify-content: space-between;
-  height: 50px;
+  height: 60px;
   width: 100%;
   z-index: 20;
 }
@@ -84,6 +84,7 @@ main {
     grid-auto-rows: 1fr;
     color: rgb(36, 85, 67);
     text-align: center;
+    top: 60px;
 }
 
 #card {
@@ -121,6 +122,20 @@ main p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+@media only screen and (max-width: 1050px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #card {
+        margin-top: 20%;
+        height: 500px;
+        width: 500px;
+    }
+}
+
 @media only screen and (max-width: 765px) {
     header h1 {
         display: none;
@@ -138,16 +153,47 @@ main p {
         flex-wrap: wrap;
     }
 
-    main {
-        grid-template: repeat(3, 1fr) / 1fr;
-    }
+    
 
-    #card {
-        grid-area: 2 / 1 / span 1 / span 1;
-        border-radius: 0;
-        width: 100%;
-    }
+    
 }
+
+@media only screen and (max-width: 624px) {
+    header {
+        min-width: 0;
+        width: 100%;
+        max-width: 624px;
+        height: 60px;
+        font-size: 2rem;
+      }
+
+      header nav {
+        width: 100%;
+        min-width: 0;
+        margin-right: 0;
+      }
+
+      header ul {
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
+      header ul li {
+        width: auto;
+      }
+
+      #card {
+        height: 400px;
+        width: 400px;
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    #card {
+        height: 350px;
+        width: 350px;
+    }
+  }
 
 @media only screen and (max-width: 320px) {
     header {
@@ -157,11 +203,19 @@ main p {
     main p {
         font-size: 0.8rem;
     }
+    #card {
+        height: 273px;
+        width: 273px;
+    }
 }
 
 @media only screen and (max-width: 273px) {
     main p {
         padding: 0;
+    }
+    #card {
+        height: 213px;
+        width: 213px;
     }
 }
 
@@ -187,4 +241,6 @@ main p {
         height: 70%;
         align-self: center;
     }
+
+    
 }

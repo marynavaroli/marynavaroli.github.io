@@ -19,7 +19,7 @@ header {
   position: fixed;
   display: flex;
   justify-content: space-between;
-  height: 50px;
+  height: 60px;
   width: 100%;
   z-index: 20;
 }
@@ -76,7 +76,7 @@ header a:active {
 
 main {
   position: relative;
-  top: 50px;
+  top: 60px;
   display: grid;
   grid-template: repeat(12, 1fr) / repeat(12, 1fr);
   grid-auto-rows: 1fr;
@@ -346,6 +346,12 @@ main h3 {
   background-color: rgb(255, 255, 255);
   border-radius: 30px;
   height:100%;
+}
+
+@media only screen and (max-width: 768px) {
+  header h1 { display: none; }
+    header nav { width: 100%; margin-right: 0; min-width: 0; }
+    header ul { justify-content: space-around; flex-wrap: wrap; }
 }
 
 @media only screen and (max-width: 624px) {
