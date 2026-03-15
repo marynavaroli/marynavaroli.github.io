@@ -1,7 +1,17 @@
 # Mary Navaroli Resume Website
 
-My resume as a responsive website.
+React resume website for Mary Navaroli, including education, experience, hobbies, project demos, and contact information.
 
-# How to view
+## Development
 
-Visit [https://marynavaroli.github.io/]
+```bash
+npm install
+npm run dev
+```
+
+## Production build
+
+```bash
+npm run optimize-images
+npm run build
+```
