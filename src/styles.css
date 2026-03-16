@@ -15,12 +15,13 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: #f5fdf8;
+  background: #f5fdf8;
 }
 
 body {
   margin: 0;
   min-width: 320px;
+  background: #f5fdf8;
 }
 
 a {
@@ -91,7 +92,10 @@ main {
   gap: 2rem;
   align-items: center;
   min-height: calc(100vh - 8rem);
-  padding: 2rem 0;
+}
+
+#about.hero {
+  padding-top: 0;
 }
 
 .hero-copy,
@@ -439,6 +443,10 @@ main {
     padding: 0.8rem 1rem;
   }
 
+  main {
+    padding-top: 1.25rem;
+  }
+
   .hero,
   .resume-section,
   .project-grid,
@@ -466,7 +474,7 @@ main {
 @media (max-width: 640px) {
   main {
     width: min(100% - 1rem, 1320px);
-    padding-top: 1rem;
+    padding-top: 0.5rem;
   }
 
   .site-header {
