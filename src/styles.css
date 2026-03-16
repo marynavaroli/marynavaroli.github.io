@@ -1,7 +1,7 @@
 :root {
   font-family: "Manrope", sans-serif;
   color: #17392d;
-  background: rgba(255, 255, 255, 0.76);
+  background: #f5fdf8;
   color-scheme: light;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,6 +15,7 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: #f5fdf8;
 }
 
 body {
@@ -46,7 +47,7 @@ select {
   justify-content: space-between;
   padding: 1.1rem 4.5rem;
   backdrop-filter: blur(14px);
-  background: rgba(245, 253, 248, 0.72);
+  background: #f5fdf8;
   border-bottom: 1px solid rgba(23, 57, 45, 0.08);
 }
 

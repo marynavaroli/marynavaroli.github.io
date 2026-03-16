@@ -18,6 +18,6 @@ npm run build
 
 ## GitHub Pages
 
-The deployment workflow is in [.github/workflows/deploy.yml](/home/mary/Documents/website/marynavaroli.github.io/.github/workflows/deploy.yml).
+The deployment workflow is in [.github/workflows/deploy.yml](/marynavaroli.github.io/.github/workflows/deploy.yml).
 
 In the repository settings on GitHub, Pages should be set to deploy from `GitHub Actions`.
